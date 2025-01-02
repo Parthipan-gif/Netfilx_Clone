@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
+
+
+*{
+    margin: 0px;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left,black,transparent),url(wallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top_section{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    justify-content: space-between;
+    img{
+        height: 170%;
+    }
+    .top_right{
+        select{
+            width: 100px;
+            height: 40px;
+            background-color: transparent;
+            border-radius: 8px;
+            /* border: none; */
+            position: relative;
+            right: 45px;
+            color: white;
+            option{
+                color: white;
+                background-color: grey;
+            }
+
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            border-radius: 9px;
+            cursor: pointer;
+            position: relative;
+            right: 45px;
+
+        }
+    }
+}
+
+.content{
+    height: 500px;
+    width: 600px;
+    color: white;
+    font: bold;
+    /* background-color: antiquewhite; */
+    /* border: 5px solid; */
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    h1{
+        font-size: 3.6rem;
+        font-weight: 900;
+    }
+    .para1{
+        font-size: 25px;
+        position: relative;
+        left: 70px;
+        /* top: 35px; */
+    }
+    .para2{
+        font-size: 18px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+    .getstarted{
+        position: relative;
+        display: flex;
+        gap: 15px;
+        top: 45px;
+        input{
+            width: 450px;
+            height: 45px;
+            background: transparent;
+            border: 2px grey solid;
+
+        }
+        input::placeholder{
+            position: relative;
+            left: 15px;
+            font-size: 18px;
+        }
+        button{
+            width: 180px;
+            height: 50px;
+            font-size: 25px;
+            color: white;
+            font: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgba(255, 0, 0, 0.926);
+
+        }
+    }
+    
+
+}
+
+.sign_in{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    form{
+        background-color: rgba(0, 0, 0, 0.467);
+        color: white;
+        /* border: 3px red solid; */
+        width: 400px;
+        height: 500px;
+        margin-top: 200px;
+        padding: 45px;
+        padding-top: 65px;
+    }
+    h1{
+        position: relative;
+        left: 30px;
+    }
+    input{
+        width: 75%;
+        height: 50px;
+        background: transparent;
+        color: white;
+        position: relative;
+        left: 25px;
+        border: 3px rgba(127, 127, 127, 0.655) solid;
+        border-radius: 5px;
+
+    }
+    input::placeholder{
+        color: rgb(164, 163, 163);
+        font-weight: 300;
+        position: relative;
+        left: 15px;
+    }
+    .bts1{
+        height: 45px;
+        width: 300px;
+        color: white;
+        font-weight: bold;
+        position: relative;
+        top: 25px;
+        left: 30px;
+        background-color: rgb(236, 13, 13);
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    .bts2{
+        height: 45px;
+        width: 300px;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        position: relative;
+        top: 55px;
+        left: 30px;
+        cursor: pointer;
+
+        /* border: 3px rgb(164, 163, 163) solid; */
+        border-radius: 8px;
+        background-color: rgba(164, 163, 163, 0.207) ;
+    }
+    .para1{
+        font-size: 18px;
+        color: rgb(137, 134, 134);
+        position: relative;
+        top: 38px;
+        left: 150px;
+    }
+    .para2{
+        font-size: 15px;
+        position: relative;
+        top: 80px;
+        left: 110px;
+        cursor: pointer;
+    }
+    .check{
+        display: inline-block;
+        position: relative;
+        top: 35px;
+        input{
+            width: 35px;
+            height: 25px;
+            position: relative;
+            top: 68px;
+
+        }
+        label{
+            position: relative;
+            left: 25px;
+            top: 65px;
+            cursor: pointer;
+        }
+    }
+    .para3{
+        font-size: 15px;
+        position: relative;
+        top: 120px;
+        left: 35px;
+        font-weight: bold;
+        span{
+            color: grey;
+        }
+       
+    }
+
+}
+
+.trending{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to bottom, rgba(34, 34, 185, 0.515) 10px ,black 150px);
+    h1{
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        left: 25px;
+        top: 100px;
+        font-size: 45px;
+    }
+    .loc{
+        position: relative;
+        top: 130px;
+        display: flex;
+        gap: 15px;
+        left: 32px;
+        select{
+            height: 35px;
+            width: 95px;
+            color: white;
+            background-color: transparent;
+            border: 2px gray solid;
+            border-radius: 5px;
+        }
+    }
+    div{
+        display: inline-block;
+    }
+    .poster{
+
+        width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 150px;
+        left: 25px;
+        overflow-x: auto;
+        .poster1{
+            background: url(lucky\ baskar.jpg);
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            position: relative;
+            left: 25px;
+            bottom: 15px;
+            border-radius: 10%;
+            h1{
+                -webkit-text-stroke: 3px white;
+                font-size: 9rem;
+                color: black;
+                position: relative;
+                top: 100px;
+                left: -30px;
+
+            }
+            input{
+                background-color: red;
+                height: 40px;
+                width: 140px;
+                position: relative;
+                left: 45px;
+                top: 270px;
+                color: white;
+                font-size: 18px;
+                font: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                border-radius: 10px;
+            
+            }
+            
+        }
+        .poster2{
+            background: url(vadachennai.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            position: relative;
+            left: 80px;
+            top: 20px;
+            border-radius: 10%;
+            h1{
+                -webkit-text-stroke: 3px white;
+                font-size: 9rem;
+                color: black;
+                position: relative;
+                top: 130px;
+                left: -30px;
+            }
+            input{
+                background-color: red;
+                height: 40px;
+                width: 140px;
+                position: relative;
+                left: 45px;
+                top: 70px;
+                font-weight: 600;
+                color: white;
+                font-size: 18px;
+                font: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                border-radius: 10px;
+            
+            }
+
+        }
+        .poster3{
+            background: url(vaazha.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            position: relative;
+            left: 150px;
+            top: 20px;
+            border-radius: 10%;
+            h1{
+                -webkit-text-stroke: 3px white;
+                font-size: 9rem;
+                color: black;
+                position: relative;
+                top: 130px;
+                left: -30px;
+
+            }
+            input{
+                background-color: red;
+                height: 40px;
+                width: 140px;
+                position: relative;
+                left: 45px;
+                top: 70px;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                font: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                border-radius: 10px;
+            
+            }
+
+        }
+        .poster4{
+            background: url(Dharmadurai.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            left: 220px;
+            top: 20px;
+            width: 200px;
+            border-radius: 10%;
+            h1{
+                -webkit-text-stroke: 3px white;
+                font-size: 9rem;
+                color: black;
+                position: relative;
+                top: 130px;
+                left: -30px;
+
+            }
+            input{
+                background-color: red;
+                height: 40px;
+                width: 140px;
+                position: relative;
+                left: 45px;
+                top: 70px;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                font: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                border-radius: 10px;
+            
+            }
+
+        }
+        .poster5{
+            background: url(Mahaan.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            position: relative;
+            left: 300px;
+            top: 20px;
+            border-radius: 10%;
+            h1{
+                -webkit-text-stroke: 3px white;
+                font-size: 9rem;
+                color: black;
+                position: relative;
+                top: 130px;
+                left: -30px;
+
+            }
+            input{
+                background-color: red;
+                height: 40px;
+                width: 140px;
+                position: relative;
+                left: 45px;
+                top: 70px;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                font: bold;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                border-radius: 10px;
+            
+            }
+
+        }
+        .poster1:hover{
+            transform: scale(1.1);
+        }
+        .poster2:hover{
+            transform: scale(1.1);
+        }
+        .poster3:hover{
+            transform: scale(1.1);
+        }
+        .poster4:hover{
+            transform: scale(1.1);
+        }
+        .poster5:hover{
+            transform: scale(1.1);
+        }
+
+        
+        
+
+    }
+}
+.join{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    /* border: 5px red solid; */
+    position: relative;
+    bottom: 45px;
+    h1{
+        color: white;
+        position: relative;
+        left: 25px;
+        top: 35px;
+    }
+    .msg{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        gap: 45px;
+        .msg1{
+            height: 280px;
+            width: 300px;
+            border-radius: 25px;
+            background: linear-gradient(45deg, rgb(60, 60, 101) 25px , rgb(88, 88, 151) , rgba(166, 71, 166, 0.834) );
+            position: relative;
+            top: 85px;
+            left: 35px;
+            h2{
+                color: white;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            p{
+                color: rgb(163, 163, 163);
+                margin-top: 20px;
+                margin-left: 15px;
+
+            }
+            img{
+                position: relative;
+                left: 200px;
+                top: 50px;
+            }
+        }
+        .msg2{
+            height: 280px;
+            width: 300px;
+            border-radius: 25px;
+            background: linear-gradient(45deg, rgb(60, 60, 101) 25px , rgb(88, 88, 151) , rgba(166, 71, 166, 0.834) );
+            position: relative;
+            top: 85px;
+            left: 35px;
+            h2{
+                color: white;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            p{
+                color: rgb(163, 163, 163);
+                margin-top: 20px;
+                margin-left: 15px;
+
+            }
+            img{
+                position: relative;
+                left: 200px;
+                top: 50px;
+            }
+
+        }
+        .msg3{
+            height: 280px;
+            width: 300px;
+            border-radius: 25px;
+            background: linear-gradient(45deg, rgb(60, 60, 101) 25px , rgb(88, 88, 151) , rgba(166, 71, 166, 0.834) );
+            position: relative;
+            top: 85px;
+            left: 35px;
+            h2{
+                color: white;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            p{
+                color: rgb(163, 163, 163);
+                margin-top: 20px;
+                margin-left: 15px;
+
+            }
+            img{
+                position: relative;
+                left: 200px;
+                top: 50px;
+            }
+
+        }
+        .msg4{
+            height: 280px;
+            width: 300px;
+            border-radius: 25px;
+            background: linear-gradient(45deg, rgb(60, 60, 101) 25px , rgb(88, 88, 151) , rgba(166, 71, 166, 0.834) );
+            position: relative;
+            top: 85px;
+            left: 35px;
+            h2{
+                color: white;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+            p{
+                color: rgb(163, 163, 163);
+                margin-top: 20px;
+                margin-left: 15px;
+
+            }
+            img{
+                position: relative;
+                left: 200px;
+                top: 30px;
+            }
+
+        }
+    }
+}
+
+ 
+
+
+
+
+
